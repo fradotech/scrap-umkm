@@ -55,6 +55,17 @@ module.exports = defineField = ($, data, hashedId) => {
   data.c305_nik_pengusaha = ($('#nik_pengusaha')).val()
   data.c306_npwp_pengusaha = ($('#npwp_pengusaha')).val()
   data.c307_is_alamat_sama = ($('[class="form-control"][type="text"][disabled=""]')).eq(9).val()
+
+  data.c307_alamat_provinsi = ($('#alamat > div:nth-child(1) > div > input')).val()
+  data.c307_alamat_kabupaten_or_kota = ($('#alamat > div:nth-child(2) > div > input')).val()
+  data.c307_alamat_kecamatan = ($('#alamat > div:nth-child(3) > div > input')).val()
+  data.c307_alamat_kelurahan_or_desa = ($('#alamat > div:nth-child(4) > div > input')).val()
+  data.c307_alamat_jalan_or_kawasan = ($('#alamat_jalan_no')).val()
+  data.c307_alamat_rt = ($('#alamat_rt')).val()
+  data.c307_alamat_rw = ($('#alamat_rw')).val()
+  data.c307_alamat_kode_pos = ($('#alamat_kode_pos')).val()
+  data.c307_alamat_kontak_email = ($('#kontak_email')).val()
+
   data.c309_kontak_telepon = ($('#kontak_telepon')).val()
   data.c309_kontak_whatsapp = ($('#kontak_whatsapp')).val()
   data.c310_pendidikan_pengusaha = ($('[class="form-control"][type="text"][disabled=""]')).eq(14).val()
@@ -632,7 +643,7 @@ module.exports = defineField = ($, data, hashedId) => {
 
   data.BLOCK_1300 = 'BLOK XIII. CATATAN'
 
-  data.c1300_catatan = 'Input manual'
+  data.c1300_catatan = ($('#step13 > div > div > p')).text()
 
 
 
