@@ -17,6 +17,17 @@ app.get('/', async (req, res) => {
     const $ = await detailPage(hashedIds[i])
     let data = new Data()    
     data = defineField($, data, hashedIds[i])
+    
+    //console.log(data.a701_jumlah)
+   // console.log(data.a701_nilai_jual_total)
+    console.log(data.c1102_omzet)
+    console.log(data.c1102_pendapatan_operasional)
+    console.log(data.c1102_pendapatan_non_ops)
+    console.log(data.c1102_pendapatan_lainnya_subsidi_usaha)
+    console.log(data.c1102_pendapatan_lainnya_subsidi_fiskal)
+  
+
+
 
     dataList.push(data)
     console.info(i + 1, '\tSuccess', hashedIds[i], data.c305_nik_pengusaha, data.c301_nama_pengusaha)

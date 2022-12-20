@@ -70,11 +70,12 @@ module.exports = defineField = ($, data, hashedId) => {
   data.c309_kontak_whatsapp = ($('#kontak_whatsapp')).val()
   data.c310_pendidikan_pengusaha = ($('[class="form-control"][type="text"][disabled=""]')).eq(14).val()
   data.c311_is_anggota_koperasi = ($('[class="form-control"][type="text"][disabled=""]')).eq(15).val()
+  data.c311_jenis_koperasi_diikuti = ($('#step3 > div > div > div > div.card-content > div > div:nth-child(14) > div > input:nth-child(1)')).val()
   data.c312_is_memiliki_pekerjaan_lain = ($('[class="form-control"][type="text"][disabled=""]')).eq(17).val()
-
-
-
-
+  data.c312_pekerjaan_lain_yang_dimiliki_1 = ($('#step3 > div > div > div > div.card-content > div > div:nth-child(16) > div > input:nth-child(1)')).val()
+  data.c312_pekerjaan_lain_yang_dimiliki_2 = ($('#teks_jenis_pekerjaan_lain')).val()
+  //#step3 > div > div > div > div.card-content > div > div:nth-child(16) > div > input:nth-child(1)
+  //#teks_jenis_pekerjaan_lain
 
 
   data.BLOCK_400 = 'BLOK IV: IZIN DAN STANDARDISASI USAHA '
@@ -173,12 +174,7 @@ module.exports = defineField = ($, data, hashedId) => {
     +data.c603_sumber_wilayah_dalam_negeri_total +
     +data.c603_sumber_wilayah_luar_negeri_total
   )
-
-
-
-
-
-
+  
   data.BLOCK_700 = 'BLOK VII. PRODUKSI'
 
   data.c702_Pendapatan_Nilai_penjualan = ($('#nilai_penjualan')).val() || '-'
@@ -231,7 +227,84 @@ module.exports = defineField = ($, data, hashedId) => {
   data.c707_Metode_Lainnya = ($('[name="metode[7][check][]"][checked=""]')).val()
   data.c707_Metode_Lainnya = ($('[name="metode[7][total_biaya][]"]')).val()
 
+//data 708
+//facebook
+data.a708_medsos_1 = ($('#form-708 > div:nth-child(2) > div > div:nth-child(2) > label')).text()
+data.a708_is_medsos_1 = ($('[name="media[2][1][check]"][checked=""]')).val() == 'ya' ? 'Ya' : 'Tidak'
+data.a708_nama_medsos_1 = ($('#id_pengguna-1-0')).val()
+//instagram
+data.a708_medsos_2 = ($('#form-708 > div:nth-child(2) > div > div:nth-child(3) > label')).text()
+data.a708_is_medsos_2 = ($('[name="media[2][2][check]"][checked=""]')).val() == 'ya' ? 'Ya' : 'Tidak'
+data.a708_nama_medsos_2 = ($('#id_pengguna-1-1')).val()
+//twitter
+data.a708_medsos_3 = ($('#form-708 > div:nth-child(2) > div > div:nth-child(4) > label')).text()
+data.a708_is_medsos_3 = ($('[name="media[2][3][check]"][checked=""]')).val() == 'ya' ? 'Ya' : 'Tidak'
+data.a708_nama_medsos_3 = ($('#id_pengguna-1-4')).val()
 
+data.a708_medsos_4 = ($('#form-708 > div:nth-child(2) > div > div:nth-child(5) > label')).text()
+data.a708_is_medsos_4 = ($('[name="media[2][4][check]"][checked=""]')).val() == 'ya' ? 'Ya' : 'Tidak'
+data.a708_nama_medsos_4 = ($('#id_pengguna-1-5')).val()
+
+data.a708_medsos_5 = ($('#form-708 > div:nth-child(2) > div > div:nth-child(6) > label')).text()
+data.a708_is_medsos_5 = ($('[name="media[2][5][check]"][checked=""]')).val() == 'ya' ? 'Ya' : 'Tidak'
+data.a708_nama_medsos_5 = ($('#id_pengguna-1-6')).val()
+
+data.a708_medsos_6 = ($('#form-708 > div:nth-child(2) > div > div:nth-child(7) > label')).text()
+data.a708_is_medsos_6 = ($('[name="media[2][6][check]"][checked=""]')).val() == 'ya' ? 'Ya' : 'Tidak'
+data.a708_nama_medsos_6 = ($('#id_pengguna-1-7')).val()
+
+data.a708_medsos_7 = ($('#form-708 > div:nth-child(2) > div > div:nth-child(8) > label')).text()
+data.a708_is_medsos_7 = ($('[name="media[2][7][check]"][checked=""]')).val() == 'ya' ? 'Ya' : 'Tidak'
+data.a708_nama_medsos_7 = ($('#id_pengguna-1-8')).val()
+
+data.a708_medsos_8 = ($('#form-708 > div:nth-child(2) > div > div:nth-child(9) > label')).text()
+data.a708_is_medsos_8 = ($('[name="media[2][8][check]"][checked=""]')).val() == 'ya' ? 'Ya' : 'Tidak'
+data.a708_nama_medsos_8 = ($('#id_pengguna-1-9')).val()
+
+data.a708_medsos_9 = ($('#form-708 > div:nth-child(2) > div > div:nth-child(10) > label')).text()
+data.a708_is_medsos_9 = ($('[name="media[2][9][check]"][checked=""]')).val() == 'ya' ? 'Ya' : 'Tidak'
+data.a708_nama_medsos_9 = ($('#id_pengguna-1-10')).val()
+
+data.a708_medsos_10 = ($('#form-708 > div:nth-child(2) > div > div:nth-child(11) > label')).text()
+data.a708_is_medsos_10 = ($('[name="media[2][10][check]"][checked=""]')).val() == 'ya' ? 'Ya' : 'Tidak'
+data.a708_nama_medsos_10 = ($('#id_pengguna-1-11')).val()
+
+//701 Produksi Barang
+//data 1
+data.a701_nomor_1 = ($('#users-contacts > tbody > tr:nth-child(1)> td:nth-child(1)')).text()
+data.a701_nama_produk_1 = ($('#users-contacts > tbody > tr:nth-child(1) > td:nth-child(2)')).text()
+data.a701_kuantitas_1 = ($('#users-contacts > tbody > tr:nth-child(1) > td:nth-child(3)')).text()
+data.a701_nilai_total_1 = ($('#users-contacts > tbody > tr:nth-child(1) > td:nth-child(5)')).text().replaceAll('.','')
+//data 2
+data.a701_nomor_2 = ($('#users-contacts > tbody > tr:nth-child(2)> td:nth-child(1)')).text()
+data.a701_nama_produk_2 = ($('#users-contacts > tbody > tr:nth-child(2) > td:nth-child(2)')).text()
+data.a701_kuantitas_2 = ($('#users-contacts > tbody > tr:nth-child(2) > td:nth-child(3)')).text()
+data.a701_nilai_total_2 = ($('#users-contacts > tbody > tr:nth-child(2) > td:nth-child(5)')).text().replaceAll('.','')
+//data 3
+data.a701_nomor_3 = ($('#users-contacts > tbody > tr:nth-child(3)> td:nth-child(1)')).text()
+data.a701_nama_produk_3 = ($('#users-contacts > tbody > tr:nth-child(3) > td:nth-child(2)')).text()
+data.a701_kuantitas_3 = ($('#users-contacts > tbody > tr:nth-child(3) > td:nth-child(3)')).text()
+data.a701_nilai_total_3 = ($('#users-contacts > tbody > tr:nth-child(3) > td:nth-child(5)')).text().replaceAll('.','')
+//data 4
+data.a701_nomor_4 = ($('#users-contacts > tbody > tr:nth-child(4)> td:nth-child(1)')).text()
+data.a701_nama_produk_4 = ($('#users-contacts > tbody > tr:nth-child(4) > td:nth-child(2)')).text()
+data.a701_kuantitas_4 = ($('#users-contacts > tbody > tr:nth-child(4) > td:nth-child(3)')).text()
+data.a701_nilai_total_4 = ($('#users-contacts > tbody > tr:nth-child(4) > td:nth-child(5)')).text().replaceAll('.','')
+//data 5
+data.a701_nomor_5 = ($('#users-contacts > tbody > tr:nth-child(5)> td:nth-child(1)')).text()
+data.a701_nama_produk_5 = ($('#users-contacts > tbody > tr:nth-child(5) > td:nth-child(2)')).text()
+data.a701_kuantitas_5 = ($('#users-contacts > tbody > tr:nth-child(5) > td:nth-child(3)')).text()
+data.a701_nilai_total_5 = ($('#users-contacts > tbody > tr:nth-child(5) > td:nth-child(5)')).text().replaceAll('.','')
+//jumlah
+data.a701_jumlah = ($('#users-contacts > tfoot > tr > td:nth-child(1)')).text()
+data.a701_nilai_jual_total = 
+(
+    +data.a701_nilai_total_1 +
+    +data.a701_nilai_total_2 +
+    +data.a701_nilai_total_3 +
+    +data.a701_nilai_total_4 +
+    +data.a701_nilai_total_5 
+).toString()
 
 
 
@@ -511,6 +584,15 @@ module.exports = defineField = ($, data, hashedId) => {
 
   data.c1101_is_memiliki_laporan = ($('[class="form-control"][type="text"][disabled=""]')).eq(19).val() || 0
 
+  //data 1102
+  data.c1102_omzet = ($('#omzet')).val()
+  data.c1102_pendapatan_operasional = ($('#pendapatan_operasional')).val()
+  data.c1102_pendapatan_non_ops = ($('#pendapatan_non_ops')).val()
+  data.c1102_pendapatan_lainnya_subsidi_usaha = ($('#subsidi_usaha')).val()
+  data.c1102_pendapatan_lainnya_subsidi_fiskal = ($('#subsidi_fiskal')).val()
+  
+  
+
   data.c1103_Pajak_pph_badan_25 = ($('[name="pph_badan_25"]')).val() || 0
   data.c1103_Pajak_pph_final_omzet = ($('[name="pph_final_omzet"]')).val() || 0
 
@@ -610,7 +692,23 @@ module.exports = defineField = ($, data, hashedId) => {
   data.c1106_Modal_Pinjaman_B_Tidak_Lancar_2020 = ($('[name="coa_tahun_1_7"]')).val() || 0
   data.c1106_Modal_Pinjaman_B_Tidak_Lancar_2021 = ($('[name="coa_tahun_1_7"]')).val() || 0
 
-  data.c1107_Modal_or_Ekuitas = ($('[name="coa_tahun_1_8"]')).val() || 0
+  //data 2020
+data.c1107_Modal_or_Ekuitas = 
+(
+  +data.c1105_Asset_2020 +
+  +data.c1106_Modal_Pinjaman_2020
+)
+toString()
+
+  //data 2021
+  data.c1107_Modal_or_Ekuitas = 
+  (
+    +data.c1105_Asset_2021 +
+    +data.c1106_Modal_Pinjaman_2021
+  )
+  toString()
+
+
 
   data.c1108_nilai_tambah_perbaiki_barang = ($('#nilai_tambah_perbaiki_barang')).val() || 0
   
@@ -636,8 +734,11 @@ module.exports = defineField = ($, data, hashedId) => {
   data.c1201_B_Penyelenggara_Pemerintah = ($('[name="penyelenggara_2"][checked=""]')).val() ? 'Ya' : 'Tidak'
   data.c1201_B_Penyelenggara_Perusahaan_Lain = ($('[name="penyelenggara_3"][checked=""]')).val() ? 'Ya' : 'Tidak'
   data.c1201_B_Penyelenggara_LSM = ($('[name="penyelenggara_4"][checked=""]')).val() ? 'Ya' : 'Tidak'
-  data.c1201_B_Penyelenggara_Lainnya = ($('[name="penyelenggara_lainnya_5"]')).val() || 'Tidak'
+  data.c1201_B_is_Penyelenggara_Lainnya = ($('[name="penyelenggara_lainnya_5"]')).val() || 'Tidak'
 
+  //1200_b
+  data.c1201_B_Penyelenggara_Lainnya_yaitu = ($('#penyelenggara_lainnya_5')).val()
+//#penyelenggara_lainnya_5
 
 
 
