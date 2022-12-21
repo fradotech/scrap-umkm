@@ -100,10 +100,21 @@ module.exports = defineField = ($, data, hashedId) => {
   data.c402_B_Standarisasi_lainnya_2 = ($('[name="standar_lain_nama[1]"]')).val()
   data.c402_B_Standarisasi_lainnya_3 = ($('[name="standar_lain_nama[2]"]')).val()
 
-
-
-
-
+  //401_A Lanjutan
+  data.c401_A_IMB = ($('[name="izin_4"][checked=""]')).val() ? 'Ya' : 'Tidak'
+  data.c401_A_izin_lokasi = ($('[name="izin_5"][checked=""]')).val() ? 'Ya' : 'Tidak'
+  data.c401_A_izin_gangguan = ($('[name="izin_6"][checked=""]')).val() ? 'Ya' : 'Tidak'
+  data.c401_A_izin_daftar_perusahaan = ($('[name="izin_7"][checked=""]')).val() ? 'Ya' : 'Tidak'
+  data.c401_A_jasa_keuangan = ($('[name="izin_8"][checked=""]')).val() ? 'Ya' : 'Tidak'
+  data.c401_A_koordinat_untuk_usaha_perikanan = ($('[name="izin_9"][checked=""]')).val() ? 'Ya' : 'Tidak'
+  data.c401_A_izin_tanda_daftar_perusahaan = ($('[name="izin_10"][checked=""]')).val() ? 'Ya' : 'Tidak'
+  data.c401_A_lingkungan_hidup_dan_kehutanan = ($('[name="izin_11"][checked=""]')).val() ? 'Ya' : 'Tidak'
+  data.c401_A_energi_dan_sumber_daya_mineral = ($('[name="izin_12"][checked=""]')).val() ? 'Ya' : 'Tidak'
+  data.c401_A_ketenagakerjaan = ($('[name="izin_13"][checked=""]')).val() ? 'Ya' : 'Tidak'
+  data.c401_A_perindustrian = ($('[name="izin_14"][checked=""]')).val() ? 'Ya' : 'Tidak'
+  data.c401_A_pekerjaan_umum_perumahan_rakyat = ($('[name="izin_15"][checked=""]')).val() ? 'Ya' : 'Tidak'
+  data.c401_A_transportasi = ($('[name="izin_16"][checked=""]')).val() ? 'Ya' : 'Tidak'
+  data.c401_A_kesehatan_obat_makanan = ($('[name="izin_17"][checked=""]')).val() ? 'Ya' : 'Tidak'
 
 
   data.BLOCK_500 = 'BLOK V. PENGHARGAAN USAHA/PERUSAHAAN'
