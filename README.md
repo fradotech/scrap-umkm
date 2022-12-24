@@ -16,3 +16,6 @@ https://satudata.kemenkopukm.go.id/
 
 Excell File Access
 https://docs.google.com/spreadsheets/d/1vG0Aq3_VX0506RQ-fXDozKoFZKB9jwuqPfS986pftNI/edit#gid=1649978894
+
+Link Drive UMKM Result 
+https://drive.google.com/drive/folders/1XV0Lu40Zvj1EiidglLtLx1mgDtkN5w3o?usp=sharing
