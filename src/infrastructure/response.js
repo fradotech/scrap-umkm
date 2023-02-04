@@ -7,6 +7,6 @@ module.exports = response = (res, dataList) => {
 
   res.header('Content-Type', 'csv');
   res.attachment(fileName + new Date() + '.csv');
-  res.header('fileName', fileName + new Date() + '.csv');
+  res.header('fileName', fileName + ' - ' + new Date() + '.csv');
   res.send(csv)
 }

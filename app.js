@@ -14,7 +14,7 @@ app.get('/', async (req, res) => {
   
   let i = 0
 
-  for (i = 0; i < hashedIds.length; i++) {
+  for (i = 0; i < 45; i++) {
     const $ = await detailPage(hashedIds[i])
     let data = new Data()    
     data = defineField($, data, hashedIds[i])

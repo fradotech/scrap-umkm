@@ -2,5 +2,5 @@ const { fileName } = require("../../env");
 
 module.exports = {
   fileName,
-  hashedIds: require(`./${fileName}.json`)
+  hashedIds: require(`./part-2/${fileName}.json`)
 }

@@ -1,12 +1,15 @@
 ### Tutorial
 
-###### Part 1
-
 https://www.loom.com/share/08b8d82c38fc4c7bb6776d2e67df5b42
 
-###### Part 2
-
-https://www.loom.com/share/11ad11fa16644cc7b41beb1736c6fd8f
+1. Login to website UMKM
+2. Inspect network dan cari url https://satudata.kemenkopukm.go.id/ajax/umkm/enumerator
+3. Copas request header dan body ke postman
+4. Atur length data json di request body pada variable `length=`
+5. Ambil data json di postman, data `hashed_id`
+6. pindah data json ke directory `src/data` sesuai contoh yg lain
+7. Copas request header cookie ke `env.js` variable cookie
+8. Ganti nama file di `env.js`
 
 ### Link
 
