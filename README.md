@@ -25,6 +25,10 @@ https://satudata.kemenkopukm.go.id/
 
 https://docs.google.com/spreadsheets/d/1vG0Aq3_VX0506RQ-fXDozKoFZKB9jwuqPfS986pftNI/edit#gid=1649978894
 
-###### Link Drive UMKM Result
+###### Link Drive UMKM Result part 1
 
 https://drive.google.com/drive/folders/1XV0Lu40Zvj1EiidglLtLx1mgDtkN5w3o?usp=sharing
+
+###### Link Drive UMKM Result part 2
+
+https://drive.google.com/drive/folders/1cKIC6J427uFpSZ4n-86U3qvcTXEMreCK

@@ -28,6 +28,6 @@ module.exports = detailPage = async (hashedId) => {
     return data
 
   } catch(err) {
-    console.log('Error Cookie env set dulu mungkin')
+    console.log('Error Cookie env atau nama file set dulu')
   }
 }

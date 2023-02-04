@@ -4,9 +4,10 @@ const { fileName } = require('../data/data.config');
 module.exports = response = (res, dataList) => {
   const parser = new Parser();
   const csv = parser.parse(dataList);
+  const name = fileName
 
   res.header('Content-Type', 'csv');
-  res.attachment(fileName + new Date() + '.csv');
-  res.header('fileName', fileName + ' - ' + new Date() + '.csv');
+  res.attachment(name);
+  res.header('fileName', name);
   res.send(csv)
 }
